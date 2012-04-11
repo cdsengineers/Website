@@ -31,6 +31,8 @@
 				float: left;
 				padding: 5px 23px;
 				text-decoration: none;
+				border-right: 1px white solid;
+				text-shadow: 0px -1px 0px black;
 			}
 			
 			#navBar .menuItem:hover {
@@ -39,10 +41,6 @@
 			
 			#navBar .menuItem:active, #navBar .menuItem.active{
 				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#181818), color-stop(100%,#4B4B4B));
-			}
-			
-			#navBar .menuItem {
-				border-right: 1px white solid;
 			}
 			
 			#search {
