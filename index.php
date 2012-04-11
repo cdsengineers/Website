@@ -3,14 +3,22 @@
 		<title>Test Page</title>
 		
 		<style>
-			body {
+			#content {
+				margin: 0px auto;
+				width: 800px;
+			}
+			
+			#header {
+				width: 300px;
+				height: 100px;
 				background: black;
-				color: white;
 			}
 		</style>
 	</head>
 
 	<body>
-		Testing the git hook
+		<div id="content">
+			<div id="header"></div>
+		</div>
 	</body>
 </html>
