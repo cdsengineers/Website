@@ -4,6 +4,6 @@
 	</head>
 
 	<body>
-		Blaa Blaa Blaa
+		Testing the git hook
 	</body>
 </html>
