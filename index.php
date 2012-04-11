@@ -44,6 +44,15 @@
 			#navBar .menuItem {
 				border-right: 1px white solid;
 			}
+			
+			#search {
+				margin: 4px 11px;
+				border-radius: 8px;
+				border: none;
+				font-size: 12px;
+				width: 133px;
+				padding: 2px 9px;
+			}
 		</style>
 	</head>
 
@@ -58,6 +67,7 @@
 				<a class="menuItem <?php echo ($_GET['page'] == "members")?"active":""?>" href="/members">Members</a>
 				<a class="menuItem <?php echo ($_GET['page'] == "sponsors")?"active":""?>" href="/sponsors">Sponsors</a>
 				<a class="menuItem <?php echo ($_GET['page'] == "wise")?"active":""?>" href="/wise">WISE</a>
+				<input type="text" id="search" placeholder="Search site.."/>
 			</div>
 		</div>
 	</body>
