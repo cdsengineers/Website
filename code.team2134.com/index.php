@@ -7,7 +7,7 @@
 	$github = new Github_Client();
 
 	//Login
-	$github->authenticate("cdsengineers", "bob104284", Github_Client::AUTH_HTTP_PASSWORD);
+	$github->authenticate("cdsengineers", $GITHUB_PASSWORD, Github_Client::AUTH_HTTP_PASSWORD);
 ?>
 <html>
 	<head>
