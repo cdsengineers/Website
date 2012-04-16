@@ -1,0 +1,73 @@
+#github {
+	
+}
+
+.selected {
+	background: black;
+	color: white;
+}
+
+.deploy {
+	color: white;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin-top: 32px;
+	margin-right: 40px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,lightgreen), color-stop(100%,green));
+	padding: 4px 14px;
+	border-radius: 4px;
+	cursor: pointer;
+	
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+.deploy:active {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,green), color-stop(100%,lightgreen));
+}
+
+#repos {
+	
+}
+
+.repo_tab {
+	border: 1px solid black;
+	padding: 2px 6px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+#braches {
+	
+}
+
+.branch_tab {
+	border: 1px solid black;
+	border-bottom: 0px;
+	padding: 2px 6px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.branch_tab:not(:first-of-type) {
+	border-left: 0px solid black;
+}
+
+.branch {
+	border: 1px solid black;
+}
+
+.branch:not(:first-of-type) {
+	display: none;
+}
+
+.commit {
+	padding: 15px 10px;
+	position: relative;
+}
+
+.commit:hover {
+	background: lightyellow;
+}
