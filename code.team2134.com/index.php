@@ -8,7 +8,9 @@
 	require_once 'Github/Autoloader.php';
 	Github_Autoloader::register();
 	$github = new Github_Client();
-
+	
+	$user = $_SESSION["user"];
+	
 	//Login
 	$github->authenticate("cdsengineers", $GITHUB_PASSWORD, Github_Client::AUTH_HTTP_PASSWORD);
 ?>
