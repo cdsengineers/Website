@@ -1,6 +1,9 @@
 <?php 	
-	require_once('cdsengineers.php');
-	protect("Programming");
+	require_once("team2134.com.inc");
+	require_once("functions.inc");
+
+	$ca = new CentralAuth();
+	$ca->protect("Programming");
 
 	require_once 'Github/Autoloader.php';
 	Github_Autoloader::register();
@@ -14,7 +17,6 @@
 		<title>CDS Engineers</title>
 		
 		<link rel="stylesheet" href="styles.css" type="text/css">
-		
 	</head>
 	
 	<body>
