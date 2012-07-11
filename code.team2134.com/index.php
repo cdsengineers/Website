@@ -7,12 +7,29 @@
 
 	require_once 'Github/Autoloader.php';
 	Github_Autoloader::register();
-	$github = new Github_Client();
 	
 	$user = $_SESSION["user"];
 	
 	//Login
-	$github->authenticate("cdsengineers", $GITHUB_PASSWORD, Github_Client::AUTH_HTTP_PASSWORD);
+	
+	$login = 'cdsengineers';
+	$secret = $GITHUB_PASSWORD;
+	$method = Github_Client::AUTH_HTTP_PASSWORD;
+
+	$httpClient = $this->getHttpClientMock();
+	$httpClient->expects($this->exactly(3))
+	    ->method('setOption')
+	    ->will($this->returnValue($httpClient));
+
+	$client = $this->getClientMockBuilder()
+	    ->setMethods(array('getHttpClient'))
+	    ->getMock();
+	$client->expects($this->once())
+	    ->method('getHttpClient')
+	    ->with()
+	    ->will($this->returnValue($httpClient));
+
+	$client->authenticate($login, $secret, $method);
 ?>
 <html>
 	<head>
