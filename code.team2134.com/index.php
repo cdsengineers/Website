@@ -32,7 +32,7 @@
 				//echo "User Info <br>";
 				//print "<pre>".print_r($user, true)."</pre>";
 
-				var_dump($github->getRepoApi());
+				var_dump($github->getUserApi());
 				exit();
 				
 				$repos = $github->getRepoApi()->getUserRepos('cdsengineers');
