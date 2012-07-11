@@ -5,7 +5,7 @@
 	$ca = new CentralAuth();
 	$ca->protect("Programming");
 
-	require_once '/home/alampiss/commonTools/Github/Autoloader.php';
+	require_once 'Github/Autoloader.php';
 	Github_Autoloader::register();
 	$github = new Github_Client();
 	
@@ -32,8 +32,6 @@
 				//echo "User Info <br>";
 				//print "<pre>".print_r($user, true)."</pre>";
 
-				var_dump($github);
-				
 				
 				$repos = $github->getRepoApi()->getUserRepos('cdsengineers');
 				$robotRepos;
