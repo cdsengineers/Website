@@ -12,7 +12,7 @@
 	$user = $_SESSION["user"];
 	
 	//Login
-	$github->authenticate("admin@team2134.com", $GITHUB_PASSWORD, $github->AUTH_HTTP_PASSWORD);
+	$github->authenticate("cdsengineers", $GITHUB_PASSWORD, Github_Client::AUTH_HTTP_PASSWORD);
 ?>
 <html>
 	<head>
@@ -32,8 +32,6 @@
 				//echo "User Info <br>";
 				//print "<pre>".print_r($user, true)."</pre>";
 
-				var_dump($github->getRepoApi()->getUserRepos('admin@team2134.com'));
-				exit();
 				
 				$repos = $github->getRepoApi()->getUserRepos('cdsengineers');
 				$robotRepos;
