@@ -12,7 +12,7 @@
 	$user = $_SESSION["user"];
 	
 	//Login
-	$github->authenticate("cdsengineers", $GITHUB_PASSWORD, Github_Client::AUTH_HTTP_PASSWORD);
+	$github->authenticate("admin@team2134.com", $GITHUB_PASSWORD, Github_Client::AUTH_HTTP_PASSWORD);
 ?>
 <html>
 	<head>
