@@ -28,9 +28,9 @@
 		<div id="container">
 			<div id="github">
 			<?php
-				//$user = $github->getUserApi()->show('cdsengineers');
-				//echo "User Info <br>";
-				//print "<pre>".print_r($user, true)."</pre>";
+				$user = $github->getUserApi()->show('cdsengineers');
+				echo "User Info <br>";
+				print "<pre>".print_r($user, true)."</pre>";
 
 				
 				$repos = $github->getRepoApi()->getUserRepos('cdsengineers');
