@@ -5,7 +5,7 @@
 	$ca = new CentralAuth();
 	$ca->protect("Programming");
 
-	require_once 'Github/Autoloader.php';
+	require_once '/home/alampiss/commonTools/Github/Autoloader.php';
 	Github_Autoloader::register();
 	$github = new Github_Client();
 	
