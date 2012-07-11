@@ -28,10 +28,12 @@
 		<div id="container">
 			<div id="github">
 			<?php
-				$user = $github->getUserApi()->show('cdsengineers');
-				echo "User Info <br>";
-				print "<pre>".print_r($user, true)."</pre>";
+				//$user = $github->getUserApi()->show('cdsengineers');
+				//echo "User Info <br>";
+				//print "<pre>".print_r($user, true)."</pre>";
 
+				var_dump($github);
+				
 				
 				$repos = $github->getRepoApi()->getUserRepos('cdsengineers');
 				$robotRepos;
