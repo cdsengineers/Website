@@ -22,7 +22,7 @@
 	</head>
 	
 	<body>
-		<?php require_once('/home/alampiss/team2134.com/members/header.php'); ?>
+		<?php require_once('../members.team2134.com/header.php'); ?>
 		
 		<div id="header"><h1>GitHub Interface</h1></div>
 		<div id="container">
@@ -31,7 +31,6 @@
 				//$user = $github->getUserApi()->show('cdsengineers');
 				//echo "User Info <br>";
 				//print "<pre>".print_r($user, true)."</pre>";
-
 				
 				$repos = $github->getRepoApi()->getUserRepos('cdsengineers');
 				$robotRepos;
@@ -53,13 +52,13 @@
 				foreach($robotRepos as $repo)
 				{
 					$branches = $github->getRepoApi()->getRepoBranches('cdsengineers', $repo["name"]);
-					foreach($branches as $branchName => $branchId)
-					{	
+					foreach($branches as $branch)
+					{
 						$row["repo_name"] = $repo["name"];
-						$row["branch_name"] = $branchName;
+						$row["branch_name"] = $branch["name"];
 						$row["branch_id"] = $branchId;
 						$robotBranches[] = $row;
-						echo "<span id='{$branchName}_branch' branchName='$branchName' repoName='$repo[name]' class='branch_tab'>$branchName</span>";
+						echo "<span id='{$branch[name]}_branch' branchName='$branch[name]' repoName='$repo[name]' class='branch_tab'>$branch[name]</span>";
 					}
 				}
 				echo "</div>";
@@ -68,16 +67,23 @@
 				foreach($robotBranches as $branch)
 				{
 					$commits = $github->getCommitApi()->getBranchCommits('cdsengineers', $branch["repo_name"], $branch["branch_name"]);
+					
 					echo "<div id='$branch[repo_name]_$branch[branch_name]' class='branch $branch[repo_name] $branch[branch_name]'>";
-					foreach($commits as $commit)
+					echo count($commits);
+					exit();
+					foreach($commits as $key => $commit)
 					{
-						echo "<div id='$commit[id]' class='commit'>
-								{$commit[committer][name]}<br>
-								$commit[message]<br>
-								".date("F j, Y \a\\t g:ia", strtotime($commit["committed_date"]))."
+						if($key == "commit");
+						{
+							/*echo "<div id='$commit[sha]' class='commit'>
+								{$commit[commit][committer][name]}<br>
+								{$commit[commit][message]}<br>
+								".date("F j, Y \a\\t g:ia", strtotime($commit["commit"]["committer"]["date"]))."
 								
-								<div class='deploy' commitId='$commit[id]'>Deploy</div>
-							</div>";
+								<div class='deploy' commitId='$commit[sha]'>Deploy</div>
+							</div>";*/
+							printPretty($commit);
+						}
 					}
 					echo "</div>";
 				}
