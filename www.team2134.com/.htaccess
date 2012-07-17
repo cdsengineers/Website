@@ -9,13 +9,7 @@ Redirect /docs/ http://docs.team2134.com/
 Options +FollowSymlinks
 RewriteEngine on
 
-RewriteCond %{HTTP_HOST} =team2134.com
-RewriteCond %{REQUEST_URI} !calendar.php$
-RewriteCond %{REQUEST_URI} !media.php$
-RewriteCond %{REQUEST_URI} !style.css$
-RewriteCond %{REQUEST_URI} !index.php$
-RewriteCond %{REQUEST_URI} !shadowbox/(.*)\.
-RewriteCond %{REQUEST_URI} !images/(.*)\.
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([a-zA-Z0-9_-]+)$ /index.php?perm=$1 [NC]
 
 RewriteRule ^jslibrary.inc jslib.php
