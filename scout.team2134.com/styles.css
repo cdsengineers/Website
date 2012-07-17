@@ -1,0 +1,113 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#titleBar {
+	background: black;
+	color: white;
+	padding: 2px 10px;
+}
+
+a {
+	color: white;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.no_underline {
+	text-decoration: none;
+}
+
+#navBar .item {
+	float: left;
+	width: 50%;
+	text-align: center;
+	background: blue;
+	color: white;
+	padding: 10px 0px;
+}
+
+#navBar .item.red {
+	background: red;
+}
+
+#container {
+	clear: both;
+	margin: 0px 10px;
+	padding-top: 10px;
+}
+
+#teamTable, #matchTable {
+	font-size: 12px;
+	width: 100%;
+}
+
+#matchTableLittle {
+	min-width: 60%;
+	font-size: 12px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	text-align: left;
+}
+
+#team_info {
+	font-size: 9px;
+}
+
+.red_team {
+	background: rgba(255, 0, 0, .3);
+	border: 1px red solid;
+	text-align: center;
+}
+
+.blue_team {
+	background: rgba(0, 0, 255, .3);
+	border: 1px blue solid;
+	text-align: center;
+}
+
+.pending_team {
+	background: rgba(255, 255, 0, .2);
+	border: 1px yellow solid;
+	text-align: center;
+}
+
+.tie_team {
+	background: rgba(255, 0, 255, .2);
+	border: 1px purple solid;
+	text-align: center;
+}
+
+.success {
+	background: rgba(0, 255, 0, .2);
+	border: 1px green solid;
+	color: green;
+	font-size: 12px;
+	padding: 3px 5px;
+	margin-bottom: 20px;
+}
+
+.label {
+	clear: both;
+	float: left;
+}
+
+#new_match_form {
+	width: 235px;
+}
+
+#new_match_form > input, #new_match_form select, .right_float {
+	float: right;
+}
+
+#new_match_form input[type="number"] {
+	width: 40px;
+}
