@@ -1,0 +1,12 @@
+#Members
+
+RewriteEngine on
+RewriteRule ^functions[/]?([a-z0-9]+)? functions.php?action=$1 [NC,QSA,L]
+
+RewriteRule ^calendar$ proxy.php?id=calendar [NC,L]
+ 
+RewriteCond %{HTTP_REFERER} calendar$ [NC]
+RewriteRule ^(calendar/)?(.*) http://www.google.com/calendar/$2
+
+RewriteRule ^schedule$ schedule.php [NC,L]
+RewriteRule ^bulletin$ bulletin.php [NC,L]
