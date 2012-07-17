@@ -10,6 +10,5 @@ Options +FollowSymlinks
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([a-zA-Z0-9_-]+)$ /index.php?perm=$1 [NC]
-
-RewriteRule ^jslibrary.inc jslib.php
+RewriteRule ^common$ jslib.php [QSA,L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ /index.php?perm=$1 [NC,L]
