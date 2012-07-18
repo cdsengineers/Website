@@ -1,0 +1,33 @@
+body{font:13px/1.5 Helvetica,Arial,"Lucinda Grande",Verdana,"Liberation Sans",FreeSans,sans-serif;}
+
+#container {
+	width: 900px;
+	margin: 10px auto 0;
+}
+
+a.button {
+	background: #4B4B4B; /* old browsers */
+	background: -moz-linear-gradient(top, #4B4B4B 0%, #181818 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4B4B4B), color-stop(100%,#181818)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4B4B4B', endColorstr='#181818',GradientType=0 ); /* ie */
+	border: 1px solid #111111;
+	color: white;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+a.button:active {
+	background: #181818; /* old browsers */
+	background: -moz-linear-gradient(top, #181818 0%, #4B4B4B 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#181818), color-stop(100%,#4B4B4B)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#4B4B4B',GradientType=0 ); /* ie */
+}
+
+.tutorial {
+	display: none;
+}
