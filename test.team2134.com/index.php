@@ -7,7 +7,7 @@
 
 	<body>
 		<div id="content">
-			
+			This is a test
 		</div>
 	</body>
 </html>
