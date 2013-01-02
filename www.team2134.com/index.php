@@ -71,7 +71,7 @@
                     </div>
                     
                     <div id="content-bottom">&nbsp;
-                    <div id="copyright">Copyright &copy; 2011 Corona Del Sol Robotics</div></div>
+                    <div id="copyright">Copyright &copy; 2012 Corona Del Sol Robotics</div></div>
                 </div>
             </div>
         </div>
