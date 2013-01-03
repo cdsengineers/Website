@@ -7,9 +7,7 @@
 
 	<body>
 		<div id="content">
-			This is a test, please work! :)
-			
-			test
+		nothing to see here...
 			
 		</div>
 	</body>
