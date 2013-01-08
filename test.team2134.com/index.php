@@ -5,6 +5,8 @@
 <title> Team 2134 </title>
 <body>
 
+<font size="5">FUCK THIS SHIT</font>
+
 We are FIRST Team 2134 from Corona del Sol High School located in Tempe, Arizona. Our mascot is the Pirates and starting last year, we have teamed up with McClintock High School.
 
 This year will be our 6th year being a member of FIRST robotics. Our team embodies and embraces the concepts of FIRST and of course gracious professionalism. It is our goal this year to both compete in the 2012 FRC competition, as well as mentor a FLL team. We believe that through community involvement and hard work, we can spread the concepts of FIRST and inspire those in the next generation to become scientists and engineers and hopefully cultivate a healthy interest in science and technology.
