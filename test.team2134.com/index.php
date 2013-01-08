@@ -1,7 +1,8 @@
 <html>
 <body bgcolor="black">
-<head> Team 2134 </head>
 <font color="white">
+<head> Team 2134 </head>
+<title> Team 2134 </title>
 <body>
 
 We are FIRST Team 2134 from Corona del Sol High School located in Tempe, Arizona. Our mascot is the Pirates and starting last year, we have teamed up with McClintock High School.
