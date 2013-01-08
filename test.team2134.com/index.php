@@ -5,7 +5,7 @@
 <title> Team 2134 </title>
 <body>
 
-<font size="5">FUCK THIS SHIT</font>
+<font size="5">
 
 We are FIRST Team 2134 from Corona del Sol High School located in Tempe, Arizona. Our mascot is the Pirates and starting last year, we have teamed up with McClintock High School.
 
@@ -15,4 +15,5 @@ If you are a parent and you child is interested in either FIRST, joining our tea
 
 Sponsors! If you are interested in sponsoring our team, please visit our Sponsors page for more information and where you may contact us.
 
+</font>
 </body>
